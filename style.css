@@ -1,0 +1,158 @@
+body {
+    background-color: hsl(30, 38%, 92%)
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: gray;
+    letter-spacing: 2px;
+    padding: 25px 0 20px 20px;
+}
+
+.name {
+    font-family: 'Fraunces', serif;
+    font-size: 25px;
+    padding: 0 35px 20px 20px;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    padding: 0 40px 20px 20px;
+    color: gray;
+    line-height: 1.5;
+}
+
+.card {
+    display: flex;
+    flex-direction: row-reverse;
+	width: 470px;
+    height: 350px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	background-color:hsl(0, 0%, 100%);
+    border-radius: 8px;
+	text-align: left;
+}
+
+.card img {
+    display: flex;
+    height: 350px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.flex-parent {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+}
+
+.flex-child1 {
+    font-size: 27px;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    padding: 0 20px 0 20px;
+}
+
+.flex-child2 {
+    font-size: 13px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: hsl(158, 36%, 37%);
+    width: 188px;
+    height: 40px;
+	border-radius: 6px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: hsl(158, 39%, 17%);;
+    transition: 0.5s;
+}
+
+.cart {
+    margin-left: 10px;
+}
+
+.button img {
+    width: 12px;
+    height: 12px;
+}
+
+.attribution {
+    margin-top: 500px;
+}
+
+@media(max-width: 768px) {
+    .card {
+        width: 300px;
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+        border: 10px;
+	}
+    
+    .card img {
+        margin: 0 auto;
+        width: 300px;
+        height: 250px;
+        object-fit: cover;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px;
+    }
+    
+    .button img {
+        width: 12px;
+        height: 12px;
+        margin: 0;
+    }
+
+    .name {
+        font-size: 29px;
+    }
+
+    .title {
+        padding: 25px 0 15px 20px;
+    }
+
+    .text {
+        font-size: 13px;
+        padding: 0 35px 20px 20px;
+    }
+
+    .button {
+        width: 260px;
+        font-size: 12px;
+        background-color: hsl(158, 36%, 37%);
+    }
+
+    .attribution {
+        position: relative;
+        justify-content: center;
+        margin-top: 735px;
+    }
+
+
+
+
+}
